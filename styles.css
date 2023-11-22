@@ -113,3 +113,22 @@ header {
   font-weight: bold;
   padding: 10px;
   }
+
+
+@media only screen and (max-width: 600px) {
+  #options {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Pantallas medianas (por ejemplo, tabletas) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  #container {
+    max-width: 80%;
+  }
+}
+
+/* Pantallas grandes (por ejemplo, computadoras de escritorio) */
+@media only screen and (min-width: 1025px) {
+  /* Puedes agregar ajustes adicionales para pantallas grandes aquí */
+}
