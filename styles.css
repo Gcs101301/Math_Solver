@@ -115,24 +115,32 @@ header {
   }
 
 
-@media only screen and (max-width: 600px) {
-  #options {
-    grid-template-columns: 1fr;
-  }
+/* Tu estilo existente */
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   /* Media query para pantallas pequeñas (por ejemplo, teléfonos) */
   .header-content {
     flex-direction: column; /* Cambia la dirección del flexbox a columna */
     align-items: center; /* Centra los elementos horizontalmente */
   }
 
-  .header-image {
-    margin-bottom: 10px; /* Añade un margen inferior para separar la imagen y el título */
+  h1 {
+    margin: 10px 0 0; /* Mueve el título hacia arriba y agrega espacio inferior */
   }
 
-  h1 {
-    margin: 0; /* Elimina el margen superior del título */
+  #options-container {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-top: 10px; /* Añade un margen superior para separar del título */
+  }
+
+  .operation-button {
+    margin: 5px; /* Ajusta el espacio entre las opciones */
+  }
+
+  .header-image {
+    margin-top: 10px; /* Añade un margen superior para separar del contenedor de opciones */
   }
 }
 
