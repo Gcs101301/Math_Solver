@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Solver - Operaciones Matematicas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="jpg/logo.jpg" type="image/x-icon">
+
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="jpg/logo.jpg" alt="Imagen Izquierda" class="header-image">
+      <marquee><h1>Operaciones Matemáticas</h1></marquee>
+    </div>
+    <div id="options-container">
+      <h1>Selecciona Una Opcion</h1>
+      <div class="operation-button" onclick="selectOperation('+')">Suma</div>
+      <div class="operation-button" onclick="selectOperation('-')">Resta</div>
+      <div class="operation-button" onclick="selectOperation('*')">Multiplicación</div>
+      <div class="operation-button" onclick="selectOperation('/')">División</div>
+    </div>
+  </header>
+
+  <div id="title">
+    <p>Resuelve la operación</p>
+    <p id="answer-message"></p>
+    <div id="correct-answers-counter">Respuestas correctas: 0</div>
+    <div id="container">
+      <div id="question"></div>
+      <div id="options"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
