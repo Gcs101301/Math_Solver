@@ -119,6 +119,21 @@ header {
   #options {
     grid-template-columns: 1fr;
   }
+
+  @media only screen and (max-width: 600px) {
+  /* Media query para pantallas pequeñas (por ejemplo, teléfonos) */
+  .header-content {
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .header-image {
+    margin-bottom: 10px; /* Añade un margen inferior para separar la imagen y el título */
+  }
+
+  h1 {
+    margin: 0; /* Elimina el margen superior del título */
+  }
 }
 
 /* Pantallas medianas (por ejemplo, tabletas) */
